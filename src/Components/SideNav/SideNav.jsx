@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import "./SideNav.css" 
+import "./SideNav.css"
 import{
     FaTh,
     FaUserAlt,
     FaShoppingBag,
-    FaBars
+    FaBars,
+    FaHeart
 }from   "react-icons/fa"
 import { NavLink } from 'react-router-dom';
 const SideNav=({children})=> {
@@ -13,25 +14,31 @@ const SideNav=({children})=> {
     const menuItem=[
         {
             path:"/",
-            name:"Dashboard",
+            name:"Home",
             icon:<FaTh/>
-        },
-        {
-            path:"/About",
-            name:"About",
-            icon:<FaUserAlt/>
         },
         {
             path:"/Products",
             name:"Products",
             icon:<FaShoppingBag/>
+        },
+        {
+            path:"/Wishlist",
+            name:"WishList",
+            icon:<FaHeart />
+        },
+        {
+            path:"/About",
+            name:"About",
+            icon:<FaUserAlt/>
         }
+        
     ]
   return (
     <div class="container">
         <div style={{width:isOpen?"200px":"50px"}}className="sidenav">
             <div className="top-section">
-                <h1 style={{display:isOpen?"block":"none"}} className="logo">Logo</h1>
+                <h1 style={{display:isOpen?"block":"none"}} className="logo">goldury</h1>
                 <div style={{marginLeft:isOpen?"50px":"0px"}}className="bars">
                     <FaBars onClick={toggle}/>
                 </div>

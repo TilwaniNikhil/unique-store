@@ -1,0 +1,25 @@
+.top_nav{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+    background: #2f2f2f;
+    color:#fff;
+    height:8vh;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+   
+    
+  }
+  .nav_cart{
+    float:right;
+    position: relative;
+    top: 0.4em;
+    right:1em;
+    font-size: 30px;
+    
+  }
+  .nav_cart a{
+    text-decoration: none;
+    color:white;
+  }
